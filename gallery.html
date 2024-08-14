@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventure Blog - Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 150px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Travel Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="./home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./gallery.html"><i class="material-icons" style='font-size:20px'>add_a_photo</i> Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./map.html"><i class='fas fa-map-marker-alt' style='font-size:20px'></i> Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./review.html"><i class="fa fa-area-chart" style='font-size:20px'></i> Review</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+       
+            <div class="gallery-item" data-toggle="modal" data-target="#modal1">
+                <img src="./images/camping.jpg" alt="Camping">
+            </div>
+         
+            <div class="gallery-item" data-toggle="modal" data-target="#modal2">
+                <img src="./images/hike.jpg" alt="Hiking">
+            </div>
+        
+            <div class="gallery-item" data-toggle="modal" data-target="#modal3">
+                <img src="./images/sports.jpg" alt="Extreme Sports">
+            </div>
+        </div>
+    </main>
+
+    
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Camping Adventure</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/camping.jpg" class="img-fluid" alt="Camping">
+                    <p><strong>Location:</strong> Yellowstone National Park</p>
+                    <p><strong>Description:</strong> An exhilarating camping experience with breathtaking views and diverse wildlife.</p>
+                    <p><strong>Guide:</strong> <a href="https://www.lonelyplanet.com/articles/category/adventure-travel">Read Guide</a></p>
+                    <p><strong>Photos:</strong> <a href="https://theworldtravelguy.com/destinations/">View Photos</a></p>
+                    <p><strong>Reviews:</strong> <a href="https://www.outsideonline.com/adventure-travel/advice/most-trusted-travel-review-sites/">Read Reviews</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Hiking Expedition</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/hike.jpg" class="img-fluid" alt="Hiking">
+                    <p><strong>Location:</strong> Rocky Mountains</p>
+                    <p><strong>Description:</strong> A challenging hike with spectacular summit views and rewarding terrain.</p>
+                    <p><strong>Guide:</strong> <a href="https://www.lonelyplanet.com/articles/category/adventure-travel">Read Guide</a></p>
+                    <p><strong>Photos:</strong> <a href="https://theworldtravelguy.com/destinations/">View Photos</a></p>
+                    <p><strong>Reviews:</strong> <a href="https://www.outsideonline.com/adventure-travel/advice/most-trusted-travel-review-sites/">Read Reviews</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">Extreme Sports</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/sports.jpg" class="img-fluid" alt="Extreme Sports">
+                    <p><strong>Location:</strong> Grand Canyon</p>
+                    <p><strong>Description:</strong> Thrilling experience with adrenaline-pumping activities and stunning landscapes.</p>
+                    <p><strong>Guide:</strong> <a href="https://www.lonelyplanet.com/articles/category/adventure-travel">Read Guide</a></p>
+                    <p><strong>Photos:</strong> <a href="https://theworldtravelguy.com/destinations/">View Photos</a></p>
+                    <p><strong>Reviews:</strong> <a href="https://www.outsideonline.com/adventure-travel/advice/most-trusted-travel-review-sites/">Read Reviews</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Travel Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

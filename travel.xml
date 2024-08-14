@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TravelDestinations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:NamespaceSchemaLocation="travel.xsd">
+    <Destination>
+        <Name>Yellowstone National Park</Name>
+        <Country>USA</Country>
+        <Description>A geothermal wonderland with geysers, hot springs, and diverse wildlife.</Description>
+    </Destination>
+    <Destination>
+        <Name>Rocky Mountains</Name>
+        <Country>Canada</Country>
+        <Description>A majestic mountain range offering spectacular hiking and skiing opportunities.</Description>
+    </Destination>
+    <Destination>
+        <Name>Grand Canyon</Name>
+        <Country>USA</Country>
+        <Description>A colossal canyon with stunning views and thrilling outdoor activities.</Description>
+    </Destination>
+</TravelDestinations>
